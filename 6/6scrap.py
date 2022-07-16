@@ -1,0 +1,1 @@
+#This is the scratch pad for chapter 6
