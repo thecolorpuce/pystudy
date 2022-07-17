@@ -1,5 +1,8 @@
-#This is the beginning of da bit ya git!
+age = input("How old are you? ")
 
-message = input("Tell me something, and I repead it: ")
+age = int(age)
 
-print(message)
+if age >= 18:
+    print("You're an adult!")
+else:
+    print("You're not an adult!")
