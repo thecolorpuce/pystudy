@@ -1,4 +1,5 @@
 
 Page number & Location
 
-98 Chapter 6. Dictionaries!
+107 Chapter 7
+User Input and While Loops
