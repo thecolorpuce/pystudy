@@ -1,5 +1,9 @@
-alien_0 = {'color': 'green', 'speed':'slow'}    
-print(alien_0['color'])
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
 
-pointValue = alien_0.get('points', 'No point value assigned.')
-print(pointValue)
+for language in set(favorite_languages.values()):
+    print(language.title())
