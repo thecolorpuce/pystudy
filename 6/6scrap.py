@@ -1,26 +1,20 @@
-aliens = []
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+    },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+    },
+}
 
-#Make 30 aliens
-
-for val in range(30):
-    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-    aliens.append(new_alien)
-
-#Make first yellow
-
-for alien in aliens[:3]:
-    if alien['color'] == 'green':
-        alien['color'] == 'yellow'
-        alien['speed'] == 'medium'
-        alien['points'] == 10
-
-#Show first 5 
-for val in aliens[:5]:
-    print(val)
-
-print("...")
-
-#Show total number of aliens created
-print(f"Total number of aliens: {len(aliens)}")
-
-#
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+    
+    print(f"\tFull Name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")
