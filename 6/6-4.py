@@ -14,7 +14,7 @@ glossary = {'loop': 'Repeating a process for a number of itterations',
             'language': 'What the programming flavor be',
             'key': 'The main attribute in a definition',
             'value': 'The value of the main attribute associated with said key',
-            'word': 'definition'}
+            'word': 'definition3'}
 
 print("Here are some definitions!\n")
 

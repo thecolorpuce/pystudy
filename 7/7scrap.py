@@ -1,10 +1,9 @@
-prompt = "\nTell me something and I will say it back to you: "
-prompt += "\nEnter 'quit' to end the program. "
+prompt = "\nPlease enter the name of a city you have visited:"
+prompt += "\n(Enter 'quit' when you are finished.) "
 
-message = ""
-
-while message != 'quit':
-    message = input(prompt)
-    print(message)
-
-    #Damn tho
+while True:
+    city = input(prompt)
+    if city == 'quit':
+        break
+    else:
+        print(f"I'd love to go to {city.title()}!")
