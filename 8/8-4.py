@@ -1,17 +1,10 @@
-#Equivalent Function Calls
+"""8-4. Large Shirts: Modify the make_shirt() function so that shirts are large
+by default with a message that reads I love Python. Make a large shirt and a
+medium shirt with the default message, and a shirt of any size with a different
+message."""
 
-def describe_pet(pet_name, animal_type='dog'):
-    """Display info about the pet"""
-    print(f"\nI have a {animal_type}.")
-    print(f"My {animal_type}'s name is {pet_name.title()}")
-    
+def make_shirt(message='I love Python', size='L'):
+    print(f"The shirt will say '{message}' and be a size '{size.title()}'")
 
-#A dog named Willie.
-
-describe_pet('willie')
-describe_pet(pet_name='willie')
-
-#A hamster named Harry.
-describe_pet('harry', 'hamster')
-describe_pet(pet_name='harry', animal_type='hamster')
-describe_pet(animal_type='hamster', pet_name='harry')
+make_shirt('Welcome to Python!')
+make_shirt()
