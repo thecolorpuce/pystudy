@@ -2,9 +2,6 @@
 #tion. Write a prompt similar to If you could visit one place in the world, where
 #would you go? Include a block of code that prints the results of the poll.
 
-from ast import AsyncFunctionDef
-
-
 responses = {}
 
 poll = True
