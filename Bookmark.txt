@@ -1,5 +1,5 @@
 
 Page number & Location
 
-122 Chapter 7
-User Input and While Loops
+129 Chapter 8
+Functions 
