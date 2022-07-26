@@ -13,3 +13,47 @@ def make_album(artist_name, album_title):
     """Return a dictionary with the appropriate information"""
     album = {'artist': artist_name, 'album': album_title}
     return album
+
+while True:
+    print("Please enter an artist and album: ")
+    print("Enter 'Q' to quit at any time")
+    artist = input("Artist: ")
+    if artist == 'q':
+        break
+    
+    album = input("Album ")
+    if album == 'q':
+        break
+    
+    album1 = make_album(artist, album)
+    
+while True:
+    print("Please enter an artist and album: ")
+    print("Enter 'Q' to quit at any time")
+    artist = input("Artist: ")
+    if artist == 'q':
+        break
+    
+    album = input("Album ")
+    if album == 'q':
+        break
+    
+    album2 = make_album(artist, album)
+    
+while True:
+    print("Please enter an artist and album: ")
+    print("Enter 'Q' to quit at any time")
+    artist = input("Artist: ")
+    if artist == 'q':
+        break
+    
+    album = input("Album ")
+    if album == 'q':
+        break
+    
+    album3 = make_album(artist, album)
+
+
+print(album1)
+print(album2)
+print(album3)
