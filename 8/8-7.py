@@ -9,3 +9,7 @@ store the number of songs on an album. If the calling line includes a value for
 the number of songs, add that value to the album’s dictionary. Make at least
 one new function call that includes the number of songs on an album."""
 
+def make_album(artist_name, album_title):
+    """Return a dictionary with the appropriate information"""
+    album = {'artist': artist_name, 'album': album_title}
+    return album
