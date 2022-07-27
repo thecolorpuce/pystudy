@@ -17,5 +17,5 @@ while unprintedDesigns:
 
 print("\nThe following models have been printed: ")
 
-for completedModel in completeModels:
-    print(completeModels)
+for completeModel in completeModels:
+    print(completeModel)
