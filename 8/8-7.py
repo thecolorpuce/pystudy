@@ -9,65 +9,32 @@ store the number of songs on an album. If the calling line includes a value for
 the number of songs, add that value to the album’s dictionary. Make at least
 one new function call that includes the number of songs on an album."""
 
-def make_album(artist_name, album_title, songs=None):
-    """Return a dictionary with the appropriate information"""
-    album = {'artist': artist_name, 'album': album_title}
+upFlag = True
+
+def makeAlbum(artist_name, album_name, song_number=None):
+    """Make a dictionary of the artist, album, and # of songs"""
+    album = {'artist': artist_name, 'album': album_name}
+    if song_number:
+        album['song_number'] = song_number
     return album
 
-while True:
-    print("Please enter an artist and album1: ")
-    print("Enter 'Q' to quit at any time")
-    artist = input("Artist: ")
-    if artist == 'q':
-        break
+def makeQuit():
+    """Maek a big old quit"""
+    print("Quitting!")
+    upFlag == False
+
+while upFlag == True:
+    print("We're going to make 3 albums")
     
-    album = input("Album ")
-    if album == 'q':
-        break
+    print("Album 1: ")
+    artName = input("Artist: ")
+    albName = input("Album: ")
+    songs = input("Songs: ")
     
-    album1 = make_album(artist, album)
-    
-while True:
-    print("Please enter an artist and album2: ")
-    print("Enter 'Q' to quit at any time")
-    artist = input("Artist: ")
-    if artist == 'q':
-        break
-    
-    album = input("Album ")
-    if album == 'q':
-        break
-    
-    album2 = make_album(artist, album)
-    
-while True:
-    print("Please enter an artist and album3: ")
-    print("Enter 'Q' to quit at any time")
-    artist = input("Artist: ")
-    if artist == 'q':
-        break
-    
-    album = input("Album ")
-    if album == 'q':
-        break
-    
-    album3 = make_album(artist, album)
-    
-while True:
-    print("Please enter an artist and album2: ")
-    print("Enter 'Q' to quit at any time")
-    artist = input("Artist: ")
-    if artist == 'q':
-        break
-    
-    album = input("Album ")
-    if album == 'q':
-        break
-    song = input('#ofsongs')
-    if song == 'q':
-        break
-    album4 = make_album(artist, album, song)
+    print("Would you like to quit?: ")
+    quit = input('q: ')
+    if quit == 'q':
+        makeQuit()
+
+album1 = makeAlbum(artName, albName, songs)
 print(album1)
-print(album2)
-print(album3)
-print(album4)
