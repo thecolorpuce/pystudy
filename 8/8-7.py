@@ -9,7 +9,7 @@ store the number of songs on an album. If the calling line includes a value for
 the number of songs, add that value to the album’s dictionary. Make at least
 one new function call that includes the number of songs on an album."""
 
-def make_album(artist_name, album_title, songs=0):
+def make_album(artist_name, album_title, songs=None):
     """Return a dictionary with the appropriate information"""
     album = {'artist': artist_name, 'album': album_title}
     return album
@@ -41,7 +41,7 @@ while True:
     album2 = make_album(artist, album)
     
 while True:
-    print("Please enter an artist and album2: ")
+    print("Please enter an artist and album3: ")
     print("Enter 'Q' to quit at any time")
     artist = input("Artist: ")
     if artist == 'q':
