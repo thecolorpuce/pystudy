@@ -20,10 +20,10 @@ def makeAlbum(artist_name, album_name, song_number=None):
 
 def makeQuit():
     """Maek a big old quit"""
-    print("Quitting!")
-    upFlag == False
+    exit = "Quitting"
+    return exit 
 
-while upFlag == True:
+while upFlag:
     print("We're going to make 3 albums")
     
     print("Album 1: ")
@@ -31,10 +31,28 @@ while upFlag == True:
     albName = input("Album: ")
     songs = input("Songs: ")
     
+    album1 = makeAlbum(artName, albName, songs)
+    
+    print("Album 2: ")
+    artName = input("Artist: ")
+    albName = input("Album: ")
+    songs = input("Songs: ")
+    
+    album2 = makeAlbum(artName, albName, songs)
+    
+    print("Album 3: ")
+    artName = input("Artist: ")
+    albName = input("Album: ")
+    songs = input("Songs: ")
+    
+    album3 = makeAlbum(artName, albName, songs)
+    
     print("Would you like to quit?: ")
     quit = input('q: ')
     if quit == 'q':
-        makeQuit()
+        upFlag = False
+        break
 
-album1 = makeAlbum(artName, albName, songs)
 print(album1)
+print(album2)
+print(album3)
