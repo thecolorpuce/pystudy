@@ -18,11 +18,6 @@ def makeAlbum(artist_name, album_name, song_number=None):
         album['song_number'] = song_number
     return album
 
-def makeQuit():
-    """Maek a big old quit"""
-    exit = "Quitting"
-    return exit 
-
 while upFlag:
     print("We're going to make 3 albums")
     
