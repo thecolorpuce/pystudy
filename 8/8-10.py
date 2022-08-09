@@ -12,14 +12,20 @@ def messages_messages(messages):
     Unfortunately, I corrode with haste"""
     
     for message in messages:
-        print(messages)
+        print(message)
 
-def sendMessages(messages, printedMessages):
+def send_messages(messages, printedMessages):
     """What's this, am I unclear? Yes"""
-    while messages:
+    for message in messages:
         message = messages.pop()
         printedMessages.append(message)
+    
+    for message in printedMessages:
+        print(message)
 
 messages = ['one', 'two', 'three']
 printedMessage = []
 
+messages_messages(messages)
+
+send_messages(messages, printedMessage)
