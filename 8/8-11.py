@@ -11,7 +11,7 @@ def messages_messages(messages):
     for message in messages:
         print(messages)
 
-def sendMessages(messages, printedMessages):
+def send_messages(messages, printedMessages):
     """What's this, am I unclear? Yes"""
     while messages:
         message = messages.pop()
@@ -20,6 +20,6 @@ def sendMessages(messages, printedMessages):
 messages = ['one', 'two', 'three']
 printedMessage = []
 
-sendMessages(messages, printedMessage)
+send_messages(messages[:], printedMessage)
 
 print(printedMessage)
