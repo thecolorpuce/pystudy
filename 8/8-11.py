@@ -19,3 +19,7 @@ def sendMessages(messages, printedMessages):
 
 messages = ['one', 'two', 'three']
 printedMessage = []
+
+sendMessages(messages, printedMessage)
+
+print(printedMessage)

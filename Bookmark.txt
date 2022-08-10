@@ -1,5 +1,8 @@
 
 Page number & Location
 
-144 Chapter 8
+146 Chapter 8
 Functions 
+
+
+Make a copy of a list ---Refresh that---
