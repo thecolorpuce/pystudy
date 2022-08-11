@@ -7,8 +7,8 @@ function should work for a call like this one:
                   car = make_car('subaru', 'outback', color='blue', tow_package=True)
 Print the dictionary that’s returned to make sure all the information was stored correctly.
 """
-
-def car_builder(manufacturer, model, *args):
+carInfo = []
+def car_builder(manufacturer, model, **args):
     """A function to print information about a car"""
     carInfo['manufacturer'] = manufacturer
     carInfo['model'] = model
