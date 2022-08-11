@@ -11,5 +11,5 @@ user_profile = build_profile('ablert', 'einstein',
 
 print(user_profile)
 
-for info in user_profile:
-    print(info)
+for info in user_profile.items():
+    print(f"{info}")
