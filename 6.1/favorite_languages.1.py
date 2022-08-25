@@ -10,5 +10,5 @@ favorite_languages = {
 
 #****Modifting this to use a loop. Keeping previous code commented for reference
 
-for k, v in favorite_languages.items():
-    print(f"{k.title()}'s favorite languake is {v.title()}")
+for name in favorite_languages.keys():
+    print(name.title())
