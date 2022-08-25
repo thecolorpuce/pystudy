@@ -20,3 +20,5 @@ glossary = {'word1': 'To be 1',
 
 for word, definition in glossary.items():
     print(f"{word.title()}: {definition}\n")
+
+#Next is looping through a dictionary. Definitely could use a refresh there
