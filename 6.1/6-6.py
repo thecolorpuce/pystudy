@@ -15,12 +15,15 @@ favorite_languages = {
     'phil': 'python',
 }
 
-for v in take_poll:
+for v in favorite_languages.keys():
     print(f"{v.title()}")
     
-    for k in favorite_languages.keys():
+    for k in take_poll:
         if v == k:
             print(f"Thank you for taking the poll {v.title()}!")
+            break
         else:
             print(f"Please take the poll {v.title()}!")
-            break
+            
+
+print("\nWhy does this not work properly?")
