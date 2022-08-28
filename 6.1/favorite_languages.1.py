@@ -10,5 +10,7 @@ favorite_languages = {
 
 #****Modifting this to use a loop. Keeping previous code commented for reference
 
+#This loop goes through the keys specifically
+
 for name in favorite_languages.keys():
     print(name.title())
