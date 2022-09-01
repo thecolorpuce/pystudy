@@ -32,3 +32,5 @@ for v in people:
     print(f"{v['first_name'].title()} {v['last_name'].title()}")
     print(f"\tAge: {v['age']}")
     print(f"\tCity: {v['city'].title()}")
+          
+          ###This is a note
