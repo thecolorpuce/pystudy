@@ -1,1 +1,1 @@
-This is a refresh of the chapter.
+This is a refresh of chapter 7.
