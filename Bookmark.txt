@@ -13,4 +13,4 @@ Make a copy of a list ---Refresh that---
 Chapter 7: User Input and Values
 
 118
-**Just finished the "Try it yourself" section.
+**Just finished the "Try it yourself" section***.
