@@ -12,5 +12,5 @@ Make a copy of a list ---Refresh that---
 
 Chapter 7: User Input and Values
 
-127
-On the TRY IT YOURSELF
+129
+On to chapter 8
