@@ -13,6 +13,4 @@ Make a copy of a list ---Refresh that---
 Chapter 8: Functions
 
 129
-On to chapter 8
-
-Test Commit
+Got through 8-5 block of challenges. 
