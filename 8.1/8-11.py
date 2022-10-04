@@ -1,0 +1,22 @@
+"""
+8-11. Archived Messages: Start with your work from Exercise 8-10. Call the
+function send_messages() with a copy of the list of messages. After calling the
+function, print both of your lists to show that the original list has retained its
+messages.
+"""
+
+def show_messages(messages, sentMessages):
+    """Simple function to print out each message in a list."""
+    
+    while messages:
+        currentMessage = messages.pop()
+        print(currentMessage)
+        sentMessages.append(currentMessage)
+
+messages = ['lol', 'r u ok?', 'lmao what a ting!', 'Hey there BridgeBoy!', 'Life before death. Strength before weakness. Journey before destination.']
+sentMessages = []
+
+show_messages(messages[:], sentMessages)
+
+print(f"\n'messages' list: \n\t{messages}")
+print(f"\n'sentMessages' list: \n\t{sentMessages}")
