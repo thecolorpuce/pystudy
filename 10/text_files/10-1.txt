@@ -1,0 +1,4 @@
+How to use variables
+How to create functions
+How to create Classes
+how to for loop
