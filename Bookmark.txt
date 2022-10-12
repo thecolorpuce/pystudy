@@ -5,6 +5,6 @@ Chapter 9: Classes
 
 Whelp! I always lose myself with this shit, but whatever.
 
-Getting into Chapter 10 Files and exceptions
+Just did 'Try It Yourself'
 
-Page 183
+Page 191
