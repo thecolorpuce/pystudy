@@ -1,5 +1,4 @@
-from itertools import count
-
+# Fail silently
 
 def count_words(filename):
     try:
