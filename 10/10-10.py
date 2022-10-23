@@ -34,5 +34,7 @@ def word_appearance(filename, word):
 
 filenames = ['alice.txt', 'little_women.txt', 'moby_dick.txt', 'siddhartha.txt']
 
+word = input("Enter a word to search for: ")
+
 for file in filenames:
     word_appearance(file, 'and')
