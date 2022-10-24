@@ -6,7 +6,7 @@ file. Run the program twice to see that it works.
 """
 
 # See 10-11, but I'll post it in here all the same
-# Updating this to let the user choose the filename
+# Updating this to let the user choose the filename, and append.json to the end
 
 import json
 
