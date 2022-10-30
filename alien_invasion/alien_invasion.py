@@ -29,12 +29,8 @@ class AlienInvasion:
             self.ship.update()
             self._update_bullets()
             self._update_screen()
+            self._delete_bullets()
             
-            # Get rid of bullets that have disappeared
-            for bullet in self.bullets.copy():
-                if bullet.rect.bottom <= 0:
-                    self.bullets.remove(bullet)
-                print(len(self.bullets))
             self._update_screen()
             
             # Make the most recent drawn screen visible.
@@ -79,7 +75,8 @@ class AlienInvasion:
             self.ship.moving_down = False
     
     def _fire_bullet(self):
-        """Create a new bullet and add it to the bullets group"""
+        """Create a new bullet and add it to the bullets group
+        Also keep bullets capped at maximum value.."""
         if len(self.bullets) < self.settings.bullets_allowed:
             new_bullet = Bullet(self)
             self.bullets.add(new_bullet)
@@ -88,6 +85,13 @@ class AlienInvasion:
         """Update position of bullets and get rid of old bullets."""
         # Update bullet positions.
         self.bullets.update()
+    
+    def _delete_bullets(self):
+        """Deletes bullets that have gone off screen."""
+        for bullet in self.bullets.copy():
+            if bullet.rect.bottom <= 0:
+                self.bullets.remove(bullet)
+            print(len(self.bullets))
     
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
