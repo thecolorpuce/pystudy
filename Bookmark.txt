@@ -5,4 +5,6 @@ Chapter 9: Classes
 
 Whelp! I always lose myself with this shit, but whatever.
 
-Try It Yourself Page 246
+Finished Try It Yourself Page 246
+
+On to learning how to shoot some bullets!
