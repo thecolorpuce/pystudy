@@ -22,6 +22,7 @@ class SidewaysShooter:
             self._check_events()
             self.ship.update()
             self._update_bullets()
+            self._delete_bullets()
             self._update_screen()
             pygame.display.flip()
     
@@ -69,7 +70,7 @@ class SidewaysShooter:
     def _delete_bullets(self):
         """Deletes bullets that have gone off screen."""
         for bullet in self.bullets.copy():
-            if bullet.rect.bottom <= 0:
+            if bullet.rect.right <= 0:
                 self.bullets.remove(bullet)
             print(len(self.bullets))
             
