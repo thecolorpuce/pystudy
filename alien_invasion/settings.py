@@ -23,4 +23,7 @@ class Settings:
         """
         available_space_x = settings.screen_width - (2 * alien_width)
         number_aliens_x = available_space_x // (2 * alien_width)
+        # Adding Rows
+        available_space_y = settings.screen_height - (3 * alien_height) - ship_height
+        number_rows = available_space_y // (2 * alien_height)
         """
