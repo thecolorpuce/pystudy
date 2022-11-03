@@ -17,7 +17,7 @@ class Bullet(Sprite):
         self.rect.midright = ss_game.ship.rect.midright
         
         # Store the bullet's position as a decimal value
-        self.x = float(self.rect.y)
+        self.x = float(self.rect.x)
     
     def update(self):
         """Move the bullet accross the screen to the right."""
