@@ -34,6 +34,7 @@ class AlienInvasion:
             self._update_bullets()
             self._update_screen()
             self._delete_bullets()
+            self._update_aliens()
             
             self._update_screen()
             
@@ -122,7 +123,12 @@ class AlienInvasion:
         alien.x = alien_width + 2 * alien_width * alien_number
         alien.rect.x = alien.x
         alien.rect.y = alien_height + 2 * alien.rect.height * row_number
+        print("LLOOOOPPP")
         self.aliens.add(alien)
+    
+    def _update_aliens(self):
+        """Update the positions of all aliens in the fleet."""
+        self.aliens.update()
     
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""

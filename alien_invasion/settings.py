@@ -27,3 +27,6 @@ class Settings:
         available_space_y = settings.screen_height - (3 * alien_height) - ship_height
         number_rows = available_space_y // (2 * alien_height)
         """
+        
+        # Alien Settings
+        self.alien_speed = 1.0
