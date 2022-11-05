@@ -1,11 +1,12 @@
 import sys
-import pygame
 
+import pygame
+from alien import Alien
+from bullet import Bullet
+from character import Character
 from settings import Settings
 from ship import Ship
-from character import Character
-from bullet import Bullet
-from alien import Alien
+
 
 class AlienInvasion:
     """Overall class to manage game assets"""
