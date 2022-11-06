@@ -6,6 +6,8 @@ from bullet import Bullet
 from character import Character
 from settings import Settings
 from ship import Ship
+from raindrop import Raindrop
+from random import randint
 
 
 class AlienInvasion:
@@ -22,8 +24,10 @@ class AlienInvasion:
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
-        
+        self.raindrops = pygame.sprite.Group()
         self._create_fleet()
+        self._create_raindrop_line()
+        
         
         
     def run_game(self):
@@ -35,6 +39,7 @@ class AlienInvasion:
             self._update_screen()
             self._delete_bullets()
             self._update_aliens()
+            
             
             self._update_screen()
             
@@ -145,6 +150,31 @@ class AlienInvasion:
         for alien in self.aliens.sprites():
             alien.rect.y += self.settings.fleet_drop_speed
         self.settings.fleet_direction *= -1
+    
+    def _create_raindrop_line(self):
+        """Create raindrops."""
+        raindrop = Raindrop(self)
+        raindrop_width, raindrop_height = raindrop.rect.size
+        space_mod = randint(3, 15)
+        available_space_x = self.settings.screen_width - (space_mod * raindrop_width)
+        number_raindrops_x = available_space_x // (10 * raindrop_width)
+        
+        # We will just want one row of raindrops
+        number_rows = 1
+        
+        # itterate through the loops
+        for row_number in range(number_rows):
+            for raindrop_number in range(number_raindrops_x):
+                self._create_raindrop(row_number, raindrop_number)
+    
+    def _create_raindrop(self, row_number, raindrop_number):
+        """Create the raindrop, and place it in the row"""
+        raindrop = Raindrop(self)
+        raindrop_width, raindrop_height = raindrop.rect.size
+        raindrop.rect.x = raindrop_width + 2 * raindrop_height * raindrop_number
+        raindrop.rect.y = raindrop_height + 2 * raindrop.rect.height * row_number
+        
+        self.raindrops.add(raindrop)
     
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""

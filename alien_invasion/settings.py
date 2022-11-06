@@ -10,7 +10,7 @@ class Settings:
         # Screen settings
         self.screen_width = 1200
         self.screen_height = 800
-        self.bg_color = (135, 206, 235)
+        self.bg_color = (220, 220, 220)
         
         # Bullet settings
         self.bullet_speed = 1.0
@@ -34,3 +34,9 @@ class Settings:
         
         # fleet_direction of 1 represents right; -1 represents left.
         self.fleet_direction = 1
+        
+        # Rain settings
+        self.raindrop_speed = 2.5
+        self.raindrop_width = 2
+        self.raindrop_height = 10
+        self.raindrop_color = (136, 206, 235)
